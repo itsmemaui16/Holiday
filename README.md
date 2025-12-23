@@ -45,9 +45,7 @@ Note: Replace the API key in `script.js` with your own Calendarific key before p
 1. Open `index.html` in a browser (no build/installation required).
 2. Optionally, update `API_KEY` in `script.js` with your Calendarific key.
 
-## Screenshots (add before submission)
 
-- Add at least 2 screenshots under a `screenshots/` folder: `main-view.png` and `detail-view.png` so graders can see the UI without running the app.
 
 
 
