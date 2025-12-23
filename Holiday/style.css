@@ -1,0 +1,185 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  color: #fff;
+  position: relative;
+  overflow-x: hidden;
+}
+
+/* Animated Background */
+#animatedBackground {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: linear-gradient(270deg, #0f172a, #1e3a8a, #6d28d9, #be185d);
+  background-size: 800% 800%;
+  animation: gradient 20s ease infinite;
+}
+
+@keyframes gradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Layout */
+header {
+  text-align: center;
+  padding: 30px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px;
+}
+
+.controls input {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  min-width: 250px;
+}
+
+.controls button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  background: #e67e22;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.controls button:hover {
+  background: #d35400;
+}
+
+/* Table */
+.table-wrapper {
+  overflow: hidden;
+  border-radius: 10px;
+  margin: 20px;
+  background: #fff;
+  color: #0f172a;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead {
+  background: #e2e8f0;
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+tbody tr:nth-child(even) {
+  background: #f1f5f9;
+}
+
+/* Buttons inside table */
+.viewHolidaysBtn {
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: none;
+  background: #1d4ed8;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.viewHolidaysBtn:hover {
+  background: #2563eb;
+}
+
+.viewRegionsBtn {
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: none;
+  background: #059669;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.viewRegionsBtn:hover {
+  background: #047857;
+}
+
+.regionsRow td {
+  background: #eef2ff;
+  color: #0f172a;
+  font-style: italic;
+}
+
+.regionsList {
+  list-style: none;
+  padding-left: 0;
+  margin: 8px 0;
+}
+.regionsList li {
+  padding: 6px 0;
+  border-bottom: 1px dashed #c7d2fe;
+}
+.regionsList li strong { color: #111827; }
+
+.action-btn {
+  padding: 8px 15px;
+  border-radius: 5px;
+  border: none;
+  background: #6b7280;
+  color: #fff;
+  cursor: pointer;
+  margin: 10px 0;
+}
+
+.action-btn:hover {
+  background: #374151;
+}
+
+/* Detail View */
+.hidden {
+  display: none;
+}
+
+#countryHeader {
+  text-align: center;
+  padding: 20px;
+}
+
+#countryHeader img {
+  width: 120px;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+#countryHeader h2 {
+  font-size: 2rem;
+  margin: 5px 0;
+}
+
+#countryHeader p {
+  margin: 3px 0;
+}

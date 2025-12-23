@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Holiday: Historical Data</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Animated Background -->
+  <div id="animatedBackground"></div>
+
+  <!-- MAIN VIEW -->
+  <section id="mainView">
+    <header>
+      <h1> Holidays: Historical Data Regarding Holidays </h1>
+      <p>Search countries and view their public holidays</p>
+    </header>
+
+    <div class="controls">
+      <input type="text" id="searchInput" placeholder="Search country..." />
+      <button id="searchBtn" type="button">Search</button>
+    </div>
+
+    <div class="table-wrapper">
+      <table id="countryTable">
+        <thead>
+          <tr>
+            <th>Code</th>
+            <th>Name</th>
+            <th>Languages</th>
+            <th>Currencies</th>
+            <th>Region</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody id="countryBody"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- DETAIL VIEW -->
+  <section id="detailView" class="hidden">
+    <button id="backBtn" class="action-btn">⬅ Back to List</button>
+
+    <div id="countryHeader">
+      <img id="countryFlag" src="" alt="Flag" />
+      <h2 id="countryName"></h2>
+      <p id="countryCode"></p>
+      <p id="countryInfo"></p>
+      <p id="countryBackground"></p>
+    </div>
+
+    <div class="controls">
+      <input type="text" id="holidaySearch" placeholder="Filter holidays..." />
+    </div>
+
+    <div class="table-wrapper">
+      <table id="holidayTable">
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Weekday</th>
+            <th>Name</th>
+            <th>Notes</th>
+          </tr>
+        </thead>
+        <tbody id="holidayBody"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
