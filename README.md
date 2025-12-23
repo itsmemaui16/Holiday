@@ -49,12 +49,7 @@ Note: Replace the API key in `script.js` with your own Calendarific key before p
 
 - Add at least 2 screenshots under a `screenshots/` folder: `main-view.png` and `detail-view.png` so graders can see the UI without running the app.
 
-## Members
 
-- Member 1: John Marc M. Obogne 
-- Member 2: Floriza Neri L. Miranda
-- Member 3: John Lloyd Tirao
-- Member 4: John Mark Abad 
 
 Please update the above with team member names and their responsibilities.
 
